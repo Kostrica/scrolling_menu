@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+  color: #666666;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow-x: auto;
+}
+
+.tabsBox {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.button,
+.buttonActive {
+  height: 36px;
+  width: max-content;
+  margin: 0;
+  padding: 8px 24px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #E0E0E0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #CFE5FF;
+  border-radius: 2px;
+}
+
+.buttonActive {
+  background-color: #CFE5FF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.shadowLeft {
+  position: relative;
+  left: -15px;
+  height: 53px;
+  width: 15px;
+  box-shadow: 10px 0 25px black;
+  z-index: 2;
+}
+
+.shadowRight {
+  position: relative;
+  right: -15px;
+  height: 53px;
+  width: 15px;
+  box-shadow: -10px 0 25px black;
+  z-index: 2;
+}
